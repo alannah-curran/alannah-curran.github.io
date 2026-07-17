@@ -96,7 +96,7 @@ nav {
     height: 100px;
 }
 
-#active {
+#active a {
     text-decoration: 1px wavy underline #7C9885;
     text-underline-offset: 4px;
 }
