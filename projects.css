@@ -231,6 +231,7 @@ footer {
 footer p {
     color: #484D6D;
     font-family: "ff-speak-web";
+    font-weight: bold;
 }
 
 @media (max-width: 900px) {
