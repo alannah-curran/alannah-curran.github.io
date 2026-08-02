@@ -140,6 +140,7 @@ main p a {
     background-color: #D9BBF980;
     box-shadow: 1px 1px 4px 0px #484D6D80;
     margin-right: 5px;
+    display: inline-block;
 }
 
 main p a:hover {
@@ -228,8 +229,10 @@ footer p {
         padding: 0 0 0 14px;
     }*/
     main p a {
-        line-height: 35px;
         text-align: left;
+    }
+    #button-gap {
+        margin-top: 10px;
     }
 }
 
@@ -237,8 +240,4 @@ footer p {
     main {
         width: 290px;
     }
-    main p {
-        width: 190px;
-    }
 }
-
