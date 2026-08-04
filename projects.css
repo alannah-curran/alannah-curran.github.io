@@ -28,6 +28,10 @@
     cursor: url("photos/retro.png"), auto;
 }
 
+::selection {
+    background-color: #D9BBF980;
+}
+
 body {
     text-align: center;
     display: flex;

@@ -29,6 +29,10 @@
     /* cursor from https://custom-cursor.com/en/collection/cursors/eldest?utm_source=Pinterest&utm_medium=organic*/
 }
 
+::selection {
+    background-color: #D9BBF980;
+}
+
 body {
     text-align: center;
     display: flex;
