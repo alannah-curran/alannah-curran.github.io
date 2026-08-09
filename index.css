@@ -238,6 +238,9 @@ footer p {
     #button-gap {
         margin-top: 10px;
     }
+    body {
+        border: none;
+    }
 }
 
 @media (max-width: 390px) {
