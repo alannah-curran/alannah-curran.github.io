@@ -45,6 +45,7 @@ body {
     border-right: 3vw solid #7C9885;
     border-image: url('photos/bb.jpeg') 50 repeat;
     margin: 0;
+    height: 100vh;
 }
 
 nav ul li a {
@@ -117,7 +118,7 @@ main {
     background-color: #EFE9F4CC;
     box-shadow: inset 2px 2px 8px 0px #484D6D80;
     padding: 40px 20px 40px 20px;
-    height: 600px;
+    height: 70vh;
     overflow-y: auto;
     scrollbar-color: #A6B9AB #FAFAF7;
 }
