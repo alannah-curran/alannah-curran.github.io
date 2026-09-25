@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alannah Curran Portfolio | Monster Elixir</title>
     <link rel="stylesheet" type="text/css" href="projects.css">
+    <script src="index.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Betania+Patmos&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -27,34 +28,38 @@
         <figure>
             <div id="title"><figcaption><span><a href="design.html">DESIGN • </a></span>MONSTER ELIXIR</figcaption><figcaption id="date">SPRING 2026</figcaption></div>
             <hr>
-            <img class="poster top" src="photos/monster-copy.jpg" />
+            <img class="poster top" src="photos/monster-copy.jpg" onclick="zoom(this.src)"/>
             <figcaption>Brand redesign for Monster Energy catered to a new audience: young women with moderate lifestyles that prioritize health, self-care, and mindful exercise.
                 <br><br> This audience-swapped brand aims to subvert the masculinized monster archetype, repositioning the grotesque as fantastical, whimsical, magical, and transformative. The brand ultimately retains the power aspect of the monster while avoiding harmful gender stereotypes, shifting its message from destructive to healing. Uses existing flourish assets from the original brand packaging.</figcaption>
             <br>
-            <figcaption><span style="color:#7C9885; font-weight:lighter;">𖦹</span> <mark>SKILLS:</mark> Branding, Logo Design, Visual Systems</figcaption>
-            <figcaption><span style="color:#7C9885; font-weight:lighter;">𖦹</span> <mark>SOFTWARE:</mark> Adobe Illustrator</figcaption>
+            <figcaption><span style="color:#7C9885; font-weight:lighter;">𖦹</span> <mark>SKILLS:</mark> Branding, Logo Design</figcaption>
+            <figcaption><span style="color:#7C9885; font-weight:lighter;">𖦹</span> <mark>SOFTWARE:</mark> Adobe Illustrator, Photoshop</figcaption>
             <br>
             <hr>
             <figcaption style="text-align: center;">SLIDE DECK PRESENTATION</figcaption>
             <hr>
-            <img class="top" src="photos/me1.jpg" />
-            <img src="photos/me2.jpg" />
-            <img src="photos/me3.jpg" />
-            <img src="photos/me4.jpg" />
-            <img src="photos/me5.jpg" />
-            <img src="photos/me6.jpg" />
-            <img src="photos/me7.jpg" />
-            <img src="photos/me8.jpg" />
-            <img src="photos/me9.jpg" />
-            <img src="photos/me10.jpg" />
-            <img src="photos/me11.jpg" />
-            <img src="photos/me12.jpg" />
-            <img src="photos/me13.jpg" />
-            <img src="photos/me14.jpg" />
-            <img src="photos/me15.jpg" />
-            <img src="photos/me16.jpg" />
-            <img class="bottom" src="photos/me17.jpg" />
+            <img class="top" src="photos/me1.jpg" onclick="zoom(this.src)"/>
+            <img src="photos/me2.jpg" onclick="zoom(this.src)"/>
+            <img src="photos/me3.jpg" onclick="zoom(this.src)"/>
+            <img src="photos/me4.jpg" onclick="zoom(this.src)"/>
+            <img src="photos/me5.jpg" onclick="zoom(this.src)"/>
+            <img src="photos/me6.jpg" onclick="zoom(this.src)"/>
+            <img src="photos/me7.jpg" onclick="zoom(this.src)"/>
+            <img src="photos/me8.jpg" onclick="zoom(this.src)"/>
+            <img src="photos/me9.jpg" onclick="zoom(this.src)"/>
+            <img src="photos/me10.jpg" onclick="zoom(this.src)"/>
+            <img src="photos/me11.jpg" onclick="zoom(this.src)"/>
+            <img src="photos/me12.jpg" onclick="zoom(this.src)"/>
+            <img src="photos/me13.jpg" onclick="zoom(this.src)"/>
+            <img src="photos/me14.jpg" onclick="zoom(this.src)"/>
+            <img src="photos/me15.jpg" onclick="zoom(this.src)"/>
+            <img src="photos/me16.jpg" onclick="zoom(this.src)"/>
+            <img class="bottom" src="photos/me17.jpg" onclick="zoom(this.src)"/>
         </figure>
+    </div>
+    <div id="zoomed-in">
+        <img id="zoom"/>
+        <div id="close" onclick="closeZoomed()"></div>
     </div>
 </main>
 

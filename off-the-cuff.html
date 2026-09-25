@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alannah Curran Portfolio | Magazine Spreads for Off The Cuff</title>
     <link rel="stylesheet" type="text/css" href="projects.css">
+    <script src="index.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Betania+Patmos&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -36,22 +37,26 @@
             <hr>
             <figcaption style="text-align: center;">SS26 ISSUE: COALESCENCE</figcaption>
             <hr>
-            <img class="top" src="photos/S26-1.jpg" />
-            <img src="photos/S26-2.jpg" />
-            <img src="photos/S26-3.jpg" />
+            <img class="top" src="photos/S26-1.jpg" onclick="zoom(this.src)"/>
+            <img src="photos/S26-2.jpg" onclick="zoom(this.src)"/>
+            <img src="photos/S26-3.jpg" onclick="zoom(this.src)"/>
             <hr>
             <figcaption style="text-align: center;">FW25 ISSUE: END OF OUR PAST</figcaption>
             <hr>
-            <img class="top" src="photos/F25-1.jpg" />
-            <img src="photos/F25-2.jpg" />
-            <img src="photos/F25-3.jpg" />
+            <img class="top" src="photos/F25-1.jpg" onclick="zoom(this.src)"/>
+            <img src="photos/F25-2.jpg" onclick="zoom(this.src)"/>
+            <img src="photos/F25-3.jpg" onclick="zoom(this.src)"/>
             <hr>
             <figcaption style="text-align: center;">SS25 ISSUE: DREAM LOGIC</figcaption>
             <hr>
-            <img class="top" src="photos/S25-1.jpg" />
-            <img src="photos/S25-2.jpg" />
-            <img class="bottom" src="photos/S25-3.jpg" />
+            <img class="top" src="photos/S25-1.jpg" onclick="zoom(this.src)"/>
+            <img src="photos/S25-2.jpg" onclick="zoom(this.src)"/>
+            <img class="bottom" src="photos/S25-3.jpg" onclick="zoom(this.src)"/>
         </figure>
+    </div>
+    <div id="zoomed-in">
+        <img id="zoom"/>
+        <div id="close" onclick="closeZoomed()"></div>
     </div>
 </main>
 

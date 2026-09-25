@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alannah Curran Portfolio | Pattern For The Future</title>
     <link rel="stylesheet" type="text/css" href="projects.css">
+    <script src="index.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Betania+Patmos&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -27,7 +28,7 @@
         <figure>
             <div id="title"><figcaption><span><a href="illustration.html">ILLUSTRATION • </a></span>PATTERN FOR THE FUTURE</figcaption><figcaption id="date">SPRING 2026</figcaption></div>
             <hr>
-            <img class="top poster" src="photos/tiled copy.jpg" />
+            <img class="top poster" src="photos/tiled copy.jpg" onclick="zoom(this.src)"/>
             <figcaption>My vision of the future speculates the fusion of the natural and the artificial. This pattern exhibits organic elements essential to our humanity – the heart and neurons – connected to electronic circuitry. The lotus flower, as a symbol of rebirth, also features this motif with circuits extending from its roots. While the butterfly wings surrounding the heart speak to this digital-biological fusion as a transformation, the circuits being exposed indicates a sense of vulnerability. The gridded shapes that resemble simplified versions of hearts juxtapose the central anatomical heart, and serve as a representation of how pixelation often signifies a loss of data (or in this case, a loss of humanity).
             <br><br>
                 I designed the main structure of this pattern to be abstract, with elements floating in space to give it an incomprehensible, transcendent atmosphere. Symmetry serves as the basis for my visual language as I felt that it expresses a more artificial energy than asymmetry, yet simultaneously connects to symmetry found in nature. This parallels the dichotomy between technology and the natural world that my pattern illustrates.
@@ -39,12 +40,16 @@
             <hr>
             <figcaption style="text-align: center;">PATTERN SWATCH</figcaption>
             <hr>
-            <img class="top poster" src="photos/future copy.jpg" />
+            <img class="top poster" src="photos/future copy.jpg" onclick="zoom(this.src)"/>
             <hr>
             <figcaption style="text-align: center;">MOODBOARD</figcaption>
             <hr>
-            <img class="only" src="photos/future-mood.jpg" />
+            <img class="only" src="photos/future-mood.jpg" onclick="zoom(this.src)"/>
         </figure>
+    </div>
+    <div id="zoomed-in">
+        <img id="zoom"/>
+        <div id="close" onclick="closeZoomed()"></div>
     </div>
 </main>
 

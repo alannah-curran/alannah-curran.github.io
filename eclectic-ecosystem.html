@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alannah Curran Portfolio | Eclectic Ecosystem</title>
     <link rel="stylesheet" type="text/css" href="projects.css">
+    <script src="index.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Betania+Patmos&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -27,7 +28,7 @@
         <figure>
             <div id="title"><figcaption><span><a href="design.html">DESIGN • </a></span>ECLECTIC ECOSYSTEM</figcaption><figcaption id="date">FALL 2025</figcaption></div>
             <hr>
-            <img class="top poster" src="photos/poster copy.jpg" />
+            <img class="top poster" src="photos/poster copy.jpg" onclick="zoom(this.src)"/>
             <figcaption>Poster design implementing 5 principles of design. Includes (required) use of AI for flourish shapes.</figcaption>
             <br>
             <figcaption><span style="color:#7C9885; font-weight:lighter;">𖦹</span> <mark>SKILLS:</mark> Poster Design</figcaption>
@@ -36,22 +37,26 @@
             <hr>
             <figcaption style="text-align: center;">SHAPES SPECIMENS</figcaption>
             <hr>
-            <img class="top poster" src="photos/shapes-specimens.jpg" />
+            <img class="top poster" src="photos/shapes-specimens.jpg" onclick="zoom(this.src)"onclick="zoom(this.src)"/>
             <hr>
             <figcaption style="text-align: center;">2D COMPOSITIONS</figcaption>
             <hr>
             <div id="grid" style="margin-bottom: 0;">
-                <img class="grid-gap" src="photos/2d compositions-01 copy.jpg" />
-                <img class="grid-gap" src="photos/2d compositions-02 copy.jpg" />
-                <img class="grid-gap" src="photos/2d compositions-03 copy.jpg" />
-                <img class="grid-gap" src="photos/2d compositions-04 copy.jpg" />
-                <img class="grid-gap" src="photos/2d compositions-05 copy.jpg" />
-                <img class="grid-gap" src="photos/2d compositions-06 copy.jpg" />
-                <img class="grid-gap" src="photos/2d compositions-07 copy.jpg" />
-                <img class="grid-gap" src="photos/2d compositions-08 copy.jpg" />
-                <img class="grid-gap" src="photos/2d compositions-09 copy.jpg" />
+                <img class="grid-gap" src="photos/2d compositions-01 copy.jpg" onclick="zoom(this.src)"/>
+                <img class="grid-gap" src="photos/2d compositions-02 copy.jpg" onclick="zoom(this.src)"/>
+                <img class="grid-gap" src="photos/2d compositions-03 copy.jpg" onclick="zoom(this.src)"/>
+                <img class="grid-gap" src="photos/2d compositions-04 copy.jpg" onclick="zoom(this.src)"/>
+                <img class="grid-gap" src="photos/2d compositions-05 copy.jpg" onclick="zoom(this.src)"/>
+                <img class="grid-gap" src="photos/2d compositions-06 copy.jpg" onclick="zoom(this.src)"/>
+                <img class="grid-gap" src="photos/2d compositions-07 copy.jpg" onclick="zoom(this.src)"/>
+                <img class="grid-gap" src="photos/2d compositions-08 copy.jpg" onclick="zoom(this.src)"/>
+                <img class="grid-gap" src="photos/2d compositions-09 copy.jpg" onclick="zoom(this.src)"/>
             </div>
         </figure>
+    </div>
+    <div id="zoomed-in">
+        <img id="zoom"/>
+        <div id="close" onclick="closeZoomed()"></div>
     </div>
 </main>
 

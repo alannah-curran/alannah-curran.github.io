@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alannah Curran Portfolio | Webpage Design for Almquist and Associates</title>
     <link rel="stylesheet" type="text/css" href="projects.css">
+    <script src="index.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Betania+Patmos&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -27,7 +28,7 @@
         <figure>
             <div id="title"><figcaption><span><a href="ui-ux.html">UI/UX • </a> </span>WEBPAGE DESIGN FOR ALMQUIST AND ASSOCIATES</figcaption><figcaption id="date">FALL 2025</figcaption></div>
             <hr>
-            <img class="top poster" src="photos/wire-final.jpg" />
+            <img class="top poster" src="photos/wire-final.jpg" onclick="zoom(this.src)"/>
             <figcaption>For this text-heavy webpage, I focused on creating a dynamic layout while adhering to the brand guidelines. To keep the information visually engaging, I defined a detailed type hierarchy and included breaks in the page with important quote blocks. When replacing the filler text in the wireframe, I ended up reorganizing the page a bit to provide a better narrative flow.
                 <br><br>The page begins with the background and context of the project, then the three main points of what the website provides in the form of a card trio, and finally who it benefits and what its values are as drop-downs. To diversify the presentation of information on the page, I made sure to include interactive elements such as the redirective buttons on the cards and the expandable/collapsible menu for the values section.</figcaption>
             <br>
@@ -37,13 +38,17 @@
             <hr>
             <figcaption style="text-align: center;">LOW-FI WIREFRAME</figcaption>
             <hr>
-            <img class="top poster" src="photos/wire-1.jpg" />
+            <img class="top poster" src="photos/wire-1.jpg" onclick="zoom(this.src)"/>
             <br>
             <hr>
             <figcaption style="text-align: center;">MID-FI WIREFRAME</figcaption>
             <hr>
-            <img class="only poster" src="photos/wire-2.jpg" />
+            <img class="only poster" src="photos/wire-2.jpg" onclick="zoom(this.src)"/>
         </figure>
+    </div>
+    <div id="zoomed-in">
+        <img id="zoom"/>
+        <div id="close" onclick="closeZoomed()"></div>
     </div>
 </main>
 

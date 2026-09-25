@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alannah Curran Portfolio | Peace Packaging</title>
     <link rel="stylesheet" type="text/css" href="projects.css">
+    <script src="index.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Betania+Patmos&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -27,7 +28,7 @@
         <figure>
             <div id="title"><figcaption><span><a href="design.html">DESIGN • </a></span>FIND YOUR INNER PEACE</figcaption><figcaption id="date">FALL 2025</figcaption></div>
             <hr>
-            <img class="top" src="photos/peace.jpg" />
+            <img class="top" src="photos/peace.jpg" onclick="zoom(this.src)"/>
             <figcaption>Conceptual packaging for the assigned emotion ‘peace’. For this packaging, I decided to focus on peace as more of an inner feeling rather than an external force. I defined it as a tranquil, internal state that focuses on self-acceptance and being one with nature.
             <br><br>Because I was aiming to package inner peace, I wanted my packaging to feature a meditative journey towards finding peace within. I didn't want the outside of the box to be obtrusive so that the focus could be on what's inside. I decided that a layering approach would fit this type of implementation, so I designed my packaging using a storytelling, shadow-box technique. Each layer is dedicated to finding a different kind of inner peace (mind, body, and soul) and has illustrative scenery that correlates with it (sky, trees, and meadow). After going through each layer, there are three internal cigarette-reminiscent aromatherapy “scent” boxes at the bottom that are each associated with those types of inner peace.
             <br><br>For my visual language, I used a combination of nature imagery, flat colors, and gradients that implemented a simple, pastel, earthy color palette. I wanted my typography to reflect this grounded but delicate quality, so I chose minimalistic, lightweight typefaces that featured rounded and flowy letterforms and had a sense of breathability.
@@ -36,10 +37,10 @@
             <br>
             <figcaption><span style="color:#7C9885; font-weight:lighter;">𖦹</span> <mark>SKILLS:</mark> Packaging Design, Time-based Narrative</figcaption>
             <figcaption><span style="color:#7C9885; font-weight:lighter;">𖦹</span> <mark>SOFTWARE:</mark> Adobe Illustrator, Photoshop, After Effects, CapCut</figcaption>
-            <img class="top" src="photos/angle.jpg" />
-            <img src="photos/layers.jpg" />
-            <img src="photos/inside.jpg" />
-            <img src="photos/box.jpg" />
+            <img class="top" src="photos/angle.jpg" onclick="zoom(this.src)"/>
+            <img src="photos/layers.jpg" onclick="zoom(this.src)"/>
+            <img src="photos/inside.jpg" onclick="zoom(this.src)"/>
+            <img src="photos/box.jpg" onclick="zoom(this.src)"/>
             <hr>
             <figcaption style="text-align: center;">TIME-BASED NARRATIVE</figcaption>
             <hr>
@@ -47,17 +48,21 @@
             <hr>
             <figcaption style="text-align: center;">ILLUSTRATOR FILES</figcaption>
             <hr>
-            <img class="top" src="photos/file1.jpg" />
-            <img src="photos/file2.jpg" />
-            <img src="photos/file3.jpg" />
+            <img class="top" src="photos/file1.jpg" onclick="zoom(this.src)"/>
+            <img src="photos/file2.jpg" onclick="zoom(this.src)"/>
+            <img src="photos/file3.jpg" onclick="zoom(this.src)"/>
             <hr>
             <figcaption style="text-align: center;">BRAINSTORMING PROCESS</figcaption>
             <hr>
-            <img class="top" src="photos/research.jpg" />
-            <img src="photos/map.jpg" />
-            <img src="photos/planning.jpg" />
-            <img class="bottom" src="photos/sketches.jpg" />
+            <img class="top" src="photos/research.jpg" onclick="zoom(this.src)"/>
+            <img src="photos/map.jpg" onclick="zoom(this.src)"/>
+            <img src="photos/planning.jpg" onclick="zoom(this.src)"/>
+            <img class="bottom" src="photos/sketches.jpg" onclick="zoom(this.src)"/>
         </figure>
+    </div>
+    <div id="zoomed-in">
+        <img id="zoom"/>
+        <div id="close" onclick="closeZoomed()"></div>
     </div>
 </main>
 

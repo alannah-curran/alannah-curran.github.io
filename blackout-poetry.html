@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alannah Curran Portfolio | Blackout Poetry Series</title>
     <link rel="stylesheet" type="text/css" href="projects.css">
+    <script src="index.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Betania+Patmos&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -34,15 +35,19 @@
             <figcaption><span style="color:#7C9885; font-weight:lighter;">𖦹</span> <mark>MEDIUM:</mark> Mixed</figcaption>
             <br>
             <hr>
-            <img class="top poster" src="photos/bo1.jpg" />
+            <img class="top poster" src="photos/bo1.jpg" onclick="zoom(this.src)"/>
             <figcaption><i>"against human creation / inside a bubble of a bubble afraid / time stretches more / more more more / O gaze out the window / somewhere not far / moonlings catch sight / and recoil from / we strange-looking, walking suits"</i></figcaption>
-            <img class="top poster" src="photos/bo2.jpeg" />
+            <img class="top poster" src="photos/bo2.jpeg" onclick="zoom(this.src)"/>
             <figcaption><i>"hello, morning I said slowly / last night that girl ran / for a wish / a door between realities / a different universe / defiantly strange and gold"</i></figcaption>
-            <img class="top poster" src="photos/bo3.jpg" />
+            <img class="top poster" src="photos/bo3.jpg" onclick="zoom(this.src)"/>
             <figcaption><i>"O swirling lost soul / O aurora / phenomenon of light / Thoreau: 'What sort of science is that which enriches the understanding but robs the imagination?' / O aurora / captured by dance / celebrate the heart / which contains the drawing of life"</i></figcaption>
-            <img class="top poster" src="photos/bo4.jpg" />
+            <img class="top poster" src="photos/bo4.jpg" onclick="zoom(this.src)"/>
             <figcaption><i>"water / glorious and free / the ocean, / like swimming dreams / that cascade over the naked skin of skin / like coming back to life"</i></figcaption>
         </figure>
+    </div>
+    <div id="zoomed-in">
+        <img id="zoom"/>
+        <div id="close" onclick="closeZoomed()"></div>
     </div>
 </main>
 
