@@ -224,7 +224,7 @@ footer p {
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 470px) {
     nav ul {
         gap: 1rem;
         /*padding: 0 0 0 14px;*/
@@ -245,6 +245,6 @@ footer p {
 
 @media (max-width: 390px) {
     main {
-        width: 295px;
+        width: 300px;
     }
 }

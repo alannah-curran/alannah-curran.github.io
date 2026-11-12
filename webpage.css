@@ -174,7 +174,6 @@ figure {
 }
 
 figcaption span {
-    font-style: italic;
     color: #484D6D;
     border: 0.5px solid #484D6D;
     background-color: #D9BBF980;
@@ -183,6 +182,7 @@ figcaption span {
     font-size: .8rem;
     font-weight: lighter;
     line-height: 30px;
+    white-space: nowrap;
 }
 
 mark {
@@ -231,7 +231,7 @@ footer p {
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 470px) {
     nav ul {
         gap: 1rem;
     }
@@ -243,5 +243,11 @@ footer p {
 @media (max-width: 400px) {
     body {
         border: none;
+    }
+}
+
+@media (max-width: 390px) {
+    main {
+        width: 300px;
     }
 }

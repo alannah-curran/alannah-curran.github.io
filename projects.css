@@ -384,7 +384,7 @@ footer p {
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 470px) {
     nav ul {
         gap: 1rem;
     }
@@ -399,5 +399,11 @@ footer p {
     }
     body {
         border: none;
+    }
+}
+
+@media (max-width: 390px) {
+    main {
+        width: 300px;
     }
 }
