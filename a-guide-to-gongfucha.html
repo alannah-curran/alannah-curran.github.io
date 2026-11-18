@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alannah Curran Portfolio | A Guide to Gongfucha</title>
     <link rel="stylesheet" type="text/css" href="projects.css">
+    <script src="index.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Betania+Patmos&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -26,6 +27,12 @@
         <figure>
             <div id="title"><figcaption><span><a href="design.html">DESIGN • </a></span>A GUIDE TO GONGFUCHA</figcaption><figcaption id="date">FALL 2026</figcaption></div>
             <hr>
+            <img class="top poster" src="photos/gongfucha-cover.jpg" onclick="zoom(this.src)"/>
+            <figcaption>... Features text from the r/tea subreddit and RedEye. Hand-bound with Japanese stab binding.</figcaption>
+            <br>
+            <figcaption><span style="color:#7C9885; font-weight:lighter;">𖦹</span> <mark>SKILLS:</mark> Book-making, Editorial Design, Illustration</figcaption>
+            <figcaption><span style="color:#7C9885; font-weight:lighter;">𖦹</span> <mark>SOFTWARE:</mark> Adobe InDesign, Illustrator</figcaption>
+            <img class="top poster" src="photos/gongfu-cover.jpg" onclick="zoom(this.src)"/>
 <!--            <img class="top poster" src="photos/#.jpg" onclick="zoom(this.src)"/>-->
 <!--            <figcaption>This ##+ page book ____ text from the internet to . Hand-bound with a Japanese stitch method.</figcaption>-->
 <!--            <br>-->
@@ -35,14 +42,18 @@
 <!--            <hr>-->
 <!--            <figcaption style="text-align: center;">WEB COMPONENT PROTOTYPE</figcaption>-->
 <!--            <hr>-->
-            <iframe class="top" src="https://embed.figma.com/proto/IDetY2FachNfQQTbjNt1I2/toolkit-web?node-id=1799-4189&page-id=1799%3A3712&starting-point-node-id=1799%3A4189&hotspot-hints=0&scaling=scale-down-width&content-scaling=fixed&embed-host=share"></iframe>
-            <figcaption>Website design
-                <br><br>
-                <a id="button" href="https://www.figma.com/proto/IDetY2FachNfQQTbjNt1I2/toolkit-web?node-id=1799-4189&page-id=1799%3A3712&starting-point-node-id=1799%3A4189&hotspot-hints=0&scaling=scale-down-width&content-scaling=fixed&t=Q8NjY1LzGToFqjI0-1" target="_blank">EXTERNAL PROTOTYPE LINK <span style="font-weight: lighter; font-size: .75rem; position: relative; top: -1px;">&#8599;&#xFE0E;</span></a></figcaption>
-            <br>
-            <figcaption><span style="color:#7C9885; font-weight:lighter;">𖦹</span> <mark>SKILLS:</mark> Web Design</figcaption>
-            <figcaption><span style="color:#7C9885; font-weight:lighter;">𖦹</span> <mark>SOFTWARE:</mark> Figma</figcaption>
+<!--            <iframe class="top" src="https://embed.figma.com/proto/IDetY2FachNfQQTbjNt1I2/toolkit-web?node-id=1799-4189&page-id=1799%3A3712&starting-point-node-id=1799%3A4189&hotspot-hints=0&scaling=scale-down-width&content-scaling=fixed&embed-host=share"></iframe>-->
+<!--            <figcaption>Website design-->
+<!--                <br><br>-->
+<!--                <a id="button" href="https://www.figma.com/proto/IDetY2FachNfQQTbjNt1I2/toolkit-web?node-id=1799-4189&page-id=1799%3A3712&starting-point-node-id=1799%3A4189&hotspot-hints=0&scaling=scale-down-width&content-scaling=fixed&t=Q8NjY1LzGToFqjI0-1" target="_blank">EXTERNAL PROTOTYPE LINK <span style="font-weight: lighter; font-size: .75rem; position: relative; top: -1px;">&#8599;&#xFE0E;</span></a></figcaption>-->
+<!--            <br>-->
+<!--            <figcaption><span style="color:#7C9885; font-weight:lighter;">𖦹</span> <mark>SKILLS:</mark> Web Design</figcaption>-->
+<!--            <figcaption><span style="color:#7C9885; font-weight:lighter;">𖦹</span> <mark>SOFTWARE:</mark> Figma</figcaption>-->
         </figure>
+    </div>
+    <div id="zoomed-in">
+        <img id="zoom"/>
+        <div id="close" onclick="closeZoomed()"></div>
     </div>
 </main>
 
